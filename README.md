@@ -8,20 +8,22 @@ This SDK lets you perform API calls to [VietQR](https://www.vietqr.io).
 
 ## Documentation
 
-All documentation, including examples and installation instructions, can be found on the [VietQR docs](https://www.vietqr.io).
+All documentation, including examples and installation instructions, can be found on
+the [VietQR docs](https://www.vietqr.io).
 
 ## Security
 
-If you discover any security related issues, please email vietqr.io@gmail.com instead of using the issue tracker.
+If you discover any security related issues, please email dungphanxuan999@gmail.com instead of using the issue tracker.
 
 ## Credits
 
- * [VietQR](https://www.vietqr.io)
- * [VietQR API](https://www.vietqr.io/api)
- * [VietQR SDK]()
- * [All Contributors](../../contributors)
+* [VietQR](https://www.vietqr.io)
+* [VietQR API](https://www.vietqr.io/api)
+* [VietQR SDK]()
+* [All Contributors](../../contributors)
 
-This package uses code from and is greatly inspired by the [Forge SDK package](https://github.com/themsaid/forge-sdk) by [Mohammed Said](https://github.com/themsaid).
+This package uses code from and is greatly inspired by the [Forge SDK package](https://github.com/themsaid/forge-sdk)
+by [Mohammed Said](https://github.com/themsaid).
 
 ## License
 

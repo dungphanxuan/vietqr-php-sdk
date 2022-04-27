@@ -38,28 +38,28 @@ trait MakesHttpRequests
             empty($payload) ? [] : ['form_params' => $payload]
         );
 
-        if (! $this->isSuccessful($response)) {
+        if (!$this->isSuccessful($response)) {
             return $this->handleRequestError($response);
         }
 
-        $responseBody = (string) $response->getBody();
+        $responseBody = (string)$response->getBody();
 
         return json_decode($responseBody, true) ?: $responseBody;
     }
 
     public function isSuccessful($response): bool
     {
-        if (! $response) {
+        if (!$response) {
             return false;
         }
 
-        return (int) substr($response->getStatusCode(), 0, 1) === 2;
+        return (int)substr($response->getStatusCode(), 0, 1) === 2;
     }
 
     protected function handleRequestError(ResponseInterface $response): void
     {
         if ($response->getStatusCode() === 422) {
-            throw new ValidationException(json_decode((string) $response->getBody(), true));
+            throw new ValidationException(json_decode((string)$response->getBody(), true));
         }
 
         if ($response->getStatusCode() === 404) {
@@ -67,9 +67,9 @@ trait MakesHttpRequests
         }
 
         if ($response->getStatusCode() === 400) {
-            throw new FailedActionException((string) $response->getBody());
+            throw new FailedActionException((string)$response->getBody());
         }
 
-        throw new Exception((string) $response->getBody());
+        throw new Exception((string)$response->getBody());
     }
 }

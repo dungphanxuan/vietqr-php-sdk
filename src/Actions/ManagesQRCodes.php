@@ -7,6 +7,7 @@ use App\Services\VietQR\Resources\QRCode;
 /*
  * Link API Documention: https://www.vietqr.io/danh-sach-api/api-danh-sach-ma-ngan-hang
  * */
+
 trait ManagesQRCodes
 {
 
